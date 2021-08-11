@@ -13,13 +13,17 @@ body{
 
 .header{
     text-align: center;
-    padding: 5px;
-    background-color: rgba(53, 21, 192, 0.144);
+    padding: 20px;
     color: rgb(228, 208, 26);
     letter-spacing: 3px;
     font-family: 'Anton', sans-serif;
     font-size: 50px;
     margin-top: 20px auto;
+}
+
+.logo img{
+    width: 70px;
+    position: absolute;
 }
 
 .spaceship{
@@ -52,7 +56,7 @@ body{
     right: 0;
     position: absolute;
     background: url("/assets/images/space-bg.jpg");
-    border: 1px solid #fff;
+    border: 1px solid rgb(255, 255, 255);
     background-size: cover;
     width: 700px;
     height: 600px;
@@ -61,6 +65,7 @@ body{
 
 .left img{
     position: absolute;
+    z-index: 30;
     top: 200px;
     left: 60px;
     width: 100px;
@@ -68,9 +73,31 @@ body{
 }
 
 .right img{
+    position: absolute;
     margin-top: 50px;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
+}
+
+.float-right img{
+    position: relative;
+    float: right;
+    top: 200px;
+    right: 200px;
+    width: 100px;
+    height: 100px;
+}
+
+.score-container{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 30;
+    letter-spacing: 2px;
+    font-family: 'Anton', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
 }
 
 
