@@ -5,6 +5,7 @@
 }
 
 body{
+    position: relative;
     background: url("/assets/images/universe.jpg") no-repeat;
     background-size: cover;
     height: 100vh;
@@ -13,24 +14,33 @@ body{
 .header{
     text-align: center;
     color: rgb(228, 208, 26);
-    text-transform: uppercase;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 40px;
+    letter-spacing: 3px;
+    font-family: 'Anton', sans-serif;
+    font-size: 60px;
     margin-top: 20px;
 }
 
-.starship{
+.spaceship{
     position: absolute;
-    z-index: 1;
-    width: 40px;
-    height: 40px;
+    width: 100px;
+    height: 100px;
     left: 50%;
     bottom: 0;
-    background: url("/assets/images/starship-fighter.png") no-repeat;
+    background: url("/assets/images/starship-fighter.png");
     background-size: contain;
 }
 
-canvas{
+.alien-ufo{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    left: 50%;
+    top: 0;
+    background: url("/assets/images/alien-spaceship.png");
+    background-size: contain;   
+}
+
+.canvas{
     padding: 0;
     display: block;
     margin: auto;
@@ -39,10 +49,11 @@ canvas{
     left: 0;
     right: 0;
     position: absolute;
-    background: url("/assets/images/space-bg.jpg") bottom;
-    border: 2px solid #fff;
+    background: url("/assets/images/space-bg.jpg");
+    border: 1px solid #fff;
     background-size: cover;
-    width: 60%;
+    width: 700px;
+    height: 600px;
   
 }
 
