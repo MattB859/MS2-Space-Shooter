@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Space Shooter</title>
 </head>
@@ -15,14 +16,15 @@
         <h1 class="header">Alien space attack</h1>
     </header>
 
-    <canvas id=myCanvas>
+    <div class="canvas" id=myCanvas>
         <div class="rocks"></div>
-        <div class="starship"></div>
-    </canvas>
-
+        <div id="spaceship" class="spaceship"></div>
+        <div id="ufo" class="alien-ufo"></div>
+    </div>
 
 
     <script src="/assets/js/main.js"></script>
+    <script src="/assets/js/jquery.js"></script>
 
 </body>
 
