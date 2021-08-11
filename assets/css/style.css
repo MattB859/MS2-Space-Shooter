@@ -13,11 +13,13 @@ body{
 
 .header{
     text-align: center;
+    padding: 5px;
+    background-color: rgba(53, 21, 192, 0.144);
     color: rgb(228, 208, 26);
     letter-spacing: 3px;
     font-family: 'Anton', sans-serif;
-    font-size: 60px;
-    margin-top: 20px;
+    font-size: 50px;
+    margin-top: 20px auto;
 }
 
 .spaceship{
@@ -26,14 +28,14 @@ body{
     height: 100px;
     left: 50%;
     bottom: 0;
-    background: url("/assets/images/starship-fighter.png");
+    background: url("/assets/images/spaceship-img2.png");
     background-size: contain;
 }
 
 .alien-ufo{
     position: absolute;
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
     left: 50%;
     top: 0;
     background: url("/assets/images/alien-spaceship.png");
@@ -56,4 +58,19 @@ body{
     height: 600px;
   
 }
+
+.left img{
+    position: absolute;
+    top: 200px;
+    left: 60px;
+    width: 100px;
+    height: 100px;
+}
+
+.right img{
+    margin-top: 50px;
+    width: 300px;
+    height: 300px;
+}
+
 
