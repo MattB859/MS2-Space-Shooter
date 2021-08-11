@@ -1,7 +1,9 @@
-let canvas = document.getElementById("myCanvas");
-let ctx = canvas.getContext("2d");
-let img = document.getElementById("space-bg");
+let spaceship = document.getElementById("spaceship");
 
-/*ctx.fillStyle = "#000";
-ctx.fillRect(0, 0, 500, 500);
-ctx.stroke();*/
+window.addEventListener("keydown", function(e){
+    let left = window.getComputedStyle("spaceship").getPropertyValue("left");
+    if (e.key = "ArrowLeft"){
+        spaceship.style.left = left - 10 + "px";
+
+    }
+});
